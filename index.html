@@ -4,33 +4,173 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bhanu Partap | Digital Card</title>
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
-body{background:#eef2f0;display:flex;justify-content:center;padding:18px}
-.card{width:100%;max-width:430px;background:white;border-radius:22px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.12)}
-.header{height:210px;background:linear-gradient(135deg,#078c3a,#ffe000);display:flex;align-items:center;justify-content:center}
-.logo{width:150px;height:150px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:#078c3a;text-align:center;padding:18px}
-.profile{text-align:center;padding:32px 20px 18px}
-.profile h1{font-size:34px;margin-bottom:8px}
-.profile h2{font-size:21px;color:#078c3a;margin-bottom:6px}
-.profile p{font-size:17px;color:#555}
-.info{margin:0 22px 22px;background:white;border-radius:22px;box-shadow:0 8px 28px rgba(0,0,0,.09);overflow:hidden}
-.row{padding:18px 20px;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:#111}
-.row:last-child{border-bottom:none}
-.label{font-size:13px;color:#777;margin-bottom:5px}
-.value{font-size:17px;font-weight:700;line-height:1.45;word-break:break-word}
-.arrow{font-size:28px;color:#078c3a;padding-left:12px}
-.add{display:block;margin:0 22px 26px;padding:20px;text-align:center;text-decoration:none;background:linear-gradient(135deg,#ffe000,#078c3a);color:#111;border-radius:18px;font-size:25px;font-weight:800}
-.add small{display:block;font-size:13px;font-weight:500;margin-top:5px}
-.footer{text-align:center;color:#777;font-size:13px;padding-bottom:20px}
+
+body{
+  background:#eef2f0;
+  display:flex;
+  justify-content:center;
+  padding:18px;
+}
+
+.card{
+  width:100%;
+  max-width:430px;
+  background:white;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 12px 35px rgba(0,0,0,.12);
+}
+
+.header{
+  height:210px;
+  background:linear-gradient(135deg,#078c3a,#ffe000);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.logo{
+  width:155px;
+  height:155px;
+  background:white;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+}
+
+.logo img{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+}
+
+.profile{
+  text-align:center;
+  padding:32px 20px 18px;
+}
+
+.profile h1{
+  font-size:34px;
+  margin-bottom:8px;
+}
+
+.profile h2{
+  font-size:21px;
+  color:#078c3a;
+  margin-bottom:6px;
+}
+
+.profile p{
+  font-size:17px;
+  color:#555;
+}
+
+.info{
+  margin:0 22px 22px;
+  background:white;
+  border-radius:22px;
+  box-shadow:0 8px 28px rgba(0,0,0,.09);
+  overflow:hidden;
+}
+
+.row{
+  padding:18px 18px;
+  border-bottom:1px solid #eee;
+  display:flex;
+  align-items:center;
+  text-decoration:none;
+  color:#111;
+  gap:15px;
+}
+
+.row:last-child{
+  border-bottom:none;
+}
+
+.icon{
+  width:34px;
+  min-width:34px;
+  height:34px;
+  color:#078c3a;
+}
+
+.text{
+  flex:1;
+}
+
+.label{
+  font-size:13px;
+  color:#777;
+  margin-bottom:5px;
+}
+
+.value{
+  font-size:17px;
+  font-weight:700;
+  line-height:1.45;
+  word-break:break-word;
+}
+
+.arrow{
+  font-size:28px;
+  color:#078c3a;
+  padding-left:8px;
+}
+
+.add{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  margin:0 22px 26px;
+  padding:20px;
+  text-align:left;
+  text-decoration:none;
+  background:linear-gradient(135deg,#ffe000,#078c3a);
+  color:#111;
+  border-radius:18px;
+}
+
+.add-icon{
+  width:42px;
+  height:42px;
+}
+
+.add strong{
+  display:block;
+  font-size:25px;
+  font-weight:800;
+}
+
+.add small{
+  display:block;
+  font-size:13px;
+  font-weight:500;
+  margin-top:5px;
+}
+
+.footer{
+  text-align:center;
+  color:#777;
+  font-size:13px;
+  padding-bottom:22px;
+}
 </style>
 </head>
 
 <body>
+
 <div class="card">
 
   <div class="header">
-    <div class="logo">AMSONS<br>GROUP</div>
+    <div class="logo">
+      <img src="logo.png" alt="Amsons Group Logo">
+    </div>
   </div>
 
   <div class="profile">
@@ -40,35 +180,69 @@ body{background:#eef2f0;display:flex;justify-content:center;padding:18px}
   </div>
 
   <div class="info">
-    <a class="row" href="tel:+255669009596">
-      <div><div class="label">Office Phone</div><div class="value">+255 669 009 596</div></div>
-      <div class="arrow">›</div>
-    </a>
 
     <a class="row" href="https://wa.me/255669009596">
-      <div><div class="label">WhatsApp</div><div class="value">+255 669 009 596</div></div>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/>
+        <path d="M8.5 8.5c.5 3 2.5 5 5 6 .5.2 1.3-.7 1.6-1 .3-.3.7-.2 1 .1l1.1.8"/>
+      </svg>
+      <div class="text">
+        <div class="label">WhatsApp</div>
+        <div class="value">+255 669 009 596</div>
+      </div>
       <div class="arrow">›</div>
     </a>
 
     <a class="row" href="mailto:bhanu.partap@amsonsgroup.net">
-      <div><div class="label">Email</div><div class="value">bhanu.partap@amsonsgroup.net</div></div>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="5" width="18" height="14" rx="2"/>
+        <path d="M3 7l9 6 9-6"/>
+      </svg>
+      <div class="text">
+        <div class="label">Email</div>
+        <div class="value">bhanu.partap@amsonsgroup.net</div>
+      </div>
       <div class="arrow">›</div>
     </a>
 
     <a class="row" href="https://www.amsonsgroup.net">
-      <div><div class="label">Website</div><div class="value">www.amsonsgroup.net</div></div>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M3 12h18"/>
+        <path d="M12 3c3 3.5 3 14 0 18"/>
+        <path d="M12 3c-3 3.5-3 14 0 18"/>
+      </svg>
+      <div class="text">
+        <div class="label">Website</div>
+        <div class="value">www.amsonsgroup.net</div>
+      </div>
       <div class="arrow">›</div>
     </a>
 
     <a class="row" href="https://maps.google.com/?q=Camel+Oil+T+Ltd+HQ+Amsons+Group+Dar+es+Salaam+Tanzania">
-      <div><div class="label">Location</div><div class="value">Camel Oil (T) Ltd HQ<br>Amsons Group<br>Dar es Salaam, Tanzania</div></div>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/>
+        <circle cx="12" cy="9" r="2.5"/>
+      </svg>
+      <div class="text">
+        <div class="label">Location</div>
+        <div class="value">Dar es Salaam, Tanzania</div>
+      </div>
       <div class="arrow">›</div>
     </a>
+
   </div>
 
   <a class="add" id="saveContact" href="#">
-    Save to Phone
-    <small>Add Bhanu Partap to your contacts</small>
+    <svg class="add-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M6 2h10l4 4v16H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/>
+      <circle cx="12" cy="10" r="3" fill="white"/>
+      <path d="M7 18c.8-2.4 2.6-4 5-4s4.2 1.6 5 4" fill="white"/>
+    </svg>
+    <div>
+      <strong>Save to Phone</strong>
+      <small>Add Bhanu Partap to your contacts</small>
+    </div>
   </a>
 
   <div class="footer">Amsons Group • Growing Together</div>
