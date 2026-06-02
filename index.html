@@ -3,38 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bhanu Partap | Digital Business Card</title>
+<title>Bhanu Partap | Digital Card</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
 body{background:#eef2f0;display:flex;justify-content:center;padding:18px}
-.card{width:100%;max-width:420px;background:white;border-radius:22px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.12)}
-.header{height:230px;background:linear-gradient(135deg,#078c3a,#ffe000);display:flex;align-items:center;justify-content:center}
-.logo{width:150px;height:150px;background:white;border-radius:50%;padding:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 25px rgba(0,0,0,.18)}
-.logo img{max-width:100%;max-height:100%;object-fit:contain}
-.profile{text-align:center;padding:35px 20px 18px}
+.card{width:100%;max-width:430px;background:white;border-radius:22px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.12)}
+.header{height:210px;background:linear-gradient(135deg,#078c3a,#ffe000);display:flex;align-items:center;justify-content:center}
+.logo{width:150px;height:150px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:#078c3a;text-align:center;padding:18px}
+.profile{text-align:center;padding:32px 20px 18px}
 .profile h1{font-size:34px;margin-bottom:8px}
 .profile h2{font-size:21px;color:#078c3a;margin-bottom:6px}
 .profile p{font-size:17px;color:#555}
-.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:10px 22px 24px}
-.action{text-decoration:none;color:#111;text-align:center;font-weight:700;font-size:13px}
-.icon{height:62px;border-radius:18px;background:#f7f7f7;display:flex;align-items:center;justify-content:center;margin-bottom:7px;box-shadow:0 6px 18px rgba(0,0,0,.10);font-size:25px;color:#078c3a}
 .info{margin:0 22px 22px;background:white;border-radius:22px;box-shadow:0 8px 28px rgba(0,0,0,.09);overflow:hidden}
-.row{padding:17px 20px;border-bottom:1px solid #eee}
+.row{padding:18px 20px;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:#111}
 .row:last-child{border-bottom:none}
 .label{font-size:13px;color:#777;margin-bottom:5px}
 .value{font-size:17px;font-weight:700;line-height:1.45;word-break:break-word}
+.arrow{font-size:28px;color:#078c3a;padding-left:12px}
 .add{display:block;margin:0 22px 26px;padding:20px;text-align:center;text-decoration:none;background:linear-gradient(135deg,#ffe000,#078c3a);color:#111;border-radius:18px;font-size:25px;font-weight:800}
 .add small{display:block;font-size:13px;font-weight:500;margin-top:5px}
 .footer{text-align:center;color:#777;font-size:13px;padding-bottom:20px}
 </style>
 </head>
+
 <body>
 <div class="card">
 
   <div class="header">
-    <div class="logo">
-      <img src="logo.png" alt="Amsons Group Logo">
-    </div>
+    <div class="logo">AMSONS<br>GROUP</div>
   </div>
 
   <div class="profile">
@@ -43,41 +39,70 @@ body{background:#eef2f0;display:flex;justify-content:center;padding:18px}
     <p>Amsons Group</p>
   </div>
 
-  <div class="actions">
-    <a class="action" href="tel:+255669009596"><div class="icon">☎</div>Call</a>
-    <a class="action" href="https://wa.me/255669009596"><div class="icon">W</div>WhatsApp</a>
-    <a class="action" href="mailto:bhanu.partap@amsonsgroup.net"><div class="icon">@</div>Email</a>
-    <a class="action" href="https://www.amsonsgroup.net"><div class="icon">⌂</div>Website</a>
-    <a class="action" href="https://maps.google.com/?q=Camel+Oil+T+Ltd+HQ+Amsons+Group+Dar+es+Salaam+Tanzania"><div class="icon">⌖</div>Location</a>
-    <a class="action" href="bhanu.vcf" download><div class="icon">+</div>Save</a>
-  </div>
-
   <div class="info">
-    <div class="row">
-      <div class="label">Office Phone</div>
-      <div class="value">+255 669 009 596</div>
-    </div>
-    <div class="row">
-      <div class="label">Email</div>
-      <div class="value">bhanu.partap@amsonsgroup.net</div>
-    </div>
-    <div class="row">
-      <div class="label">Website</div>
-      <div class="value">www.amsonsgroup.net</div>
-    </div>
-    <div class="row">
-      <div class="label">Location</div>
-      <div class="value">Camel Oil (T) Ltd HQ<br>Amsons Group<br>Dar es Salaam, Tanzania</div>
-    </div>
+    <a class="row" href="tel:+255669009596">
+      <div><div class="label">Office Phone</div><div class="value">+255 669 009 596</div></div>
+      <div class="arrow">›</div>
+    </a>
+
+    <a class="row" href="https://wa.me/255669009596">
+      <div><div class="label">WhatsApp</div><div class="value">+255 669 009 596</div></div>
+      <div class="arrow">›</div>
+    </a>
+
+    <a class="row" href="mailto:bhanu.partap@amsonsgroup.net">
+      <div><div class="label">Email</div><div class="value">bhanu.partap@amsonsgroup.net</div></div>
+      <div class="arrow">›</div>
+    </a>
+
+    <a class="row" href="https://www.amsonsgroup.net">
+      <div><div class="label">Website</div><div class="value">www.amsonsgroup.net</div></div>
+      <div class="arrow">›</div>
+    </a>
+
+    <a class="row" href="https://maps.google.com/?q=Camel+Oil+T+Ltd+HQ+Amsons+Group+Dar+es+Salaam+Tanzania">
+      <div><div class="label">Location</div><div class="value">Camel Oil (T) Ltd HQ<br>Amsons Group<br>Dar es Salaam, Tanzania</div></div>
+      <div class="arrow">›</div>
+    </a>
   </div>
 
-  <a class="add" href="bhanu.vcf" download>
-    Add Contact
-    <small>Save Bhanu Partap to your phone</small>
+  <a class="add" id="saveContact" href="#">
+    Save to Phone
+    <small>Add Bhanu Partap to your contacts</small>
   </a>
 
   <div class="footer">Amsons Group • Growing Together</div>
 
 </div>
+
+<script>
+document.getElementById("saveContact").addEventListener("click", function(e){
+  e.preventDefault();
+
+  const vcard =
+`BEGIN:VCARD
+VERSION:3.0
+N:Partap;Bhanu;;;
+FN:Bhanu Partap
+ORG:Amsons Group
+TITLE:Group Head of IT
+TEL;TYPE=CELL:+255669009596
+EMAIL:bhanu.partap@amsonsgroup.net
+URL:https://www.amsonsgroup.net
+ADR:;;Camel Oil (T) Ltd HQ, Amsons Group;Dar es Salaam;;Tanzania
+END:VCARD`;
+
+  const blob = new Blob([vcard], { type: "text/vcard" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "Bhanu_Partap.vcf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+});
+</script>
+
 </body>
 </html>
