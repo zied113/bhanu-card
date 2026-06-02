@@ -1,254 +1,275 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Bhanu Partap - Digital Business Card</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bhanu Partap | Digital Business Card</title>
 
 <style>
-* {
-  box-sizing: border-box;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #eef2f0;
-  color: #111;
+body{
+background:#edf1ef;
+display:flex;
+justify-content:center;
+padding:20px;
 }
 
-.page {
-  max-width: 430px;
-  margin: auto;
-  min-height: 100vh;
-  background: #ffffff;
-  box-shadow: 0 0 25px rgba(0,0,0,0.08);
+.container{
+width:100%;
+max-width:430px;
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
 }
 
-.header {
-  height: 220px;
-  background: linear-gradient(135deg, #008c3a, #ffe000);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom-left-radius: 45px;
-  border-bottom-right-radius: 45px;
+.header{
+background:linear-gradient(135deg,#0b8f3c,#e5dd00);
+padding:40px 20px 80px;
+text-align:center;
+position:relative;
 }
 
-.logo-box {
-  width: 145px;
-  height: 145px;
-  border-radius: 50%;
-  background: white;
-  padding: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+.logo{
+width:130px;
+height:130px;
+background:white;
+border-radius:50%;
+padding:12px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 6px 20px rgba(0,0,0,.15);
 }
 
-.logo-box img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+.logo img{
+width:100%;
+height:100%;
+object-fit:contain;
 }
 
-.profile {
-  text-align: center;
-  padding: 28px 24px 15px;
+.profile{
+text-align:center;
+padding:30px 25px 10px;
 }
 
-.profile h1 {
-  margin: 0;
-  font-size: 34px;
-  font-weight: 800;
+.profile h1{
+font-size:38px;
+margin-bottom:8px;
 }
 
-.profile h2 {
-  margin: 10px 0 6px;
-  font-size: 21px;
-  color: #008c3a;
+.profile h2{
+font-size:24px;
+color:#0b8f3c;
+margin-bottom:8px;
 }
 
-.profile p {
-  margin: 0;
-  font-size: 18px;
-  color: #555;
+.profile p{
+color:#666;
+font-size:18px;
 }
 
-.info-card {
-  margin: 20px 22px;
-  padding: 8px 22px;
-  border-radius: 24px;
-  background: #ffffff;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.10);
+.quick-actions{
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+padding:20px;
 }
 
-.info-row {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  padding: 18px 0;
-  border-bottom: 1px solid #e9e9e9;
+.action{
+text-decoration:none;
+color:#111;
+text-align:center;
 }
 
-.info-row:last-child {
-  border-bottom: none;
+.circle{
+width:70px;
+height:70px;
+border-radius:50%;
+background:white;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+margin-bottom:8px;
+transition:.3s;
 }
 
-.icon {
-  width: 46px;
-  height: 46px;
-  min-width: 46px;
-  border-radius: 50%;
-  background: #e8f5ed;
-  color: #008c3a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  font-weight: bold;
+.circle:hover{
+transform:translateY(-3px);
 }
 
-.label {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 4px;
+.action span{
+font-size:13px;
+font-weight:600;
 }
 
-.value {
-  font-size: 17px;
-  font-weight: 700;
-  word-break: break-word;
+.info-card{
+margin:10px 20px 20px;
+background:white;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+overflow:hidden;
 }
 
-.buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  padding: 0 22px 20px;
+.info-row{
+padding:18px 20px;
+border-bottom:1px solid #eee;
 }
 
-.button {
-  text-decoration: none;
-  background: #008c3a;
-  color: white;
-  padding: 15px 10px;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 17px;
-  font-weight: 700;
-  box-shadow: 0 5px 12px rgba(0,140,58,0.25);
+.info-row:last-child{
+border-bottom:none;
 }
 
-.button.yellow {
-  background: #ffcc00;
-  color: #111;
+.label{
+font-size:13px;
+color:#777;
+margin-bottom:5px;
 }
 
-.add-contact {
-  margin: 0 22px 28px;
-  display: block;
-  text-decoration: none;
-  background: linear-gradient(135deg, #008c3a, #ffe000);
-  color: #111;
-  padding: 20px;
-  border-radius: 18px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 800;
+.value{
+font-size:18px;
+font-weight:700;
+line-height:1.5;
 }
 
-.add-contact span {
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 5px;
+.add-contact{
+display:block;
+margin:20px;
+padding:20px;
+text-align:center;
+text-decoration:none;
+background:linear-gradient(135deg,#0b8f3c,#e5dd00);
+color:#111;
+font-size:28px;
+font-weight:700;
+border-radius:18px;
 }
 
-.footer {
-  text-align: center;
-  color: #777;
-  font-size: 13px;
-  padding-bottom: 20px;
+.add-contact small{
+display:block;
+font-size:14px;
+margin-top:6px;
+font-weight:500;
 }
+
+.footer{
+padding:20px;
+text-align:center;
+color:#666;
+font-size:13px;
+}
+
 </style>
 </head>
 
 <body>
-  <main class="page">
 
-    <section class="header">
-      <div class="logo-box">
-        <img src="logo.png" alt="Amsons Group Logo">
-      </div>
-    </section>
+<div class="container">
 
-    <section class="profile">
-      <h1>Bhanu Partap</h1>
-      <h2>Group Head of IT</h2>
-      <p>Amsons Group</p>
-    </section>
+<div class="header">
 
-    <section class="info-card">
-      <div class="info-row">
-        <div class="icon">☎</div>
-        <div>
-          <div class="label">Office Phone</div>
-          <div class="value">+255 669 009 596</div>
-        </div>
-      </div>
+<div class="logo">
+<img src="logo.png" alt="Amsons Group">
+</div>
 
-      <div class="info-row">
-        <div class="icon">✉</div>
-        <div>
-          <div class="label">Email</div>
-          <div class="value">bhanu.partap@amsonsgroup.net</div>
-        </div>
-      </div>
+</div>
 
-      <div class="info-row">
-        <div class="icon">🌐</div>
-        <div>
-          <div class="label">Website</div>
-          <div class="value">www.amsonsgroup.net</div>
-        </div>
-      </div>
+<div class="profile">
 
-      <div class="info-row">
-        <div class="icon">📍</div>
-        <div>
-          <div class="label">Location</div>
-          <div class="value">Dar es Salaam, Tanzania</div>
-        </div>
-      </div>
+<h1>Bhanu Partap</h1>
 
-      <div class="info-row">
-        <div class="icon">💼</div>
-        <div>
-          <div class="label">Company</div>
-          <div class="value">Amsons Group</div>
-        </div>
-      </div>
-    </section>
+<h2>Group Head of IT</h2>
 
-    <section class="buttons">
-      <a class="button" href="tel:+255669009596">Call</a>
-      <a class="button" href="https://wa.me/255669009596">WhatsApp</a>
-      <a class="button " href="mailto:bhanu.partap@amsonsgroup.net">Email</a>
-      <a class="button" href="https://www.amsonsgroup.net">Website</a>
-      
-    </section>
+<p>Amsons Group</p>
 
-    <a class="add-contact" href="bhanu.vcf" download>
-      Add Contact
-      <span>Save Bhanu Partap to your phone</span>
-    </a>
+</div>
 
-    <div class="footer">
-      Amsons Group · Growing Together
-    </div>
+<div class="quick-actions">
 
-  </main>
+<a href="tel:+255669009596" class="action">
+<div class="circle">📞</div>
+<span>Call</span>
+</a>
+
+<a href="https://wa.me/255669009596" class="action">
+<div class="circle">💬</div>
+<span>WhatsApp</span>
+</a>
+
+<a href="mailto:bhanu.partap@amsonsgroup.net" class="action">
+<div class="circle">✉️</div>
+<span>Email</span>
+</a>
+
+<a href="https://maps.google.com/?q=Camel+Oil+T+Ltd+HQ+Dar+es+Salaam" class="action">
+<div class="circle">📍</div>
+<span>Location</span>
+</a>
+
+<a href="https://www.amsonsgroup.net" class="action">
+<div class="circle">🌐</div>
+<span>Website</span>
+</a>
+
+</div>
+
+<div class="info-card">
+
+<div class="info-row">
+<div class="label">Office Phone</div>
+<div class="value">+255 669 009 596</div>
+</div>
+
+<div class="info-row">
+<div class="label">Email</div>
+<div class="value">bhanu.partap@amsonsgroup.net</div>
+</div>
+
+<div class="info-row">
+<div class="label">Website</div>
+<div class="value">www.amsonsgroup.net</div>
+</div>
+
+<div class="info-row">
+<div class="label">Location</div>
+<div class="value">
+Camel Oil (T) Ltd HQ<br>
+Amsons Group<br>
+Dar es Salaam, Tanzania
+</div>
+</div>
+
+<div class="info-row">
+<div class="label">Company</div>
+<div class="value">Amsons Group</div>
+</div>
+
+</div>
+
+<a href="bhanu.vcf" class="add-contact" download>
+Add Contact
+<small>Save contact directly to your phone</small>
+</a>
+
+<div class="footer">
+Amsons Group • Growing Together
+</div>
+
+</div>
+
 </body>
 </html>
+```
